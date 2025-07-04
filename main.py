@@ -21,9 +21,9 @@ load_dotenv()
 def setup_directories():
     """Create necessary directories for storing data."""
     dirs = [
-        "data/arxiv/comp_bio",
+       "data/arxiv/structural_bio",
         "data/arxiv/battery_chem", 
-        "data/pubmed/comp_bio",
+        "data/pubmed/structural_bio",
         "data/pubmed/battery_chem"
     ]
     for dir_path in dirs:
@@ -81,27 +81,37 @@ def scrape_pubmed(query: str, category: str, limit: int) -> List[Dict[str, Any]]
         results = pubmed.query(query, max_results=limit)
         
         for result in tqdm(results, desc=f"PubMed {category}", total=limit):
-            pmid = result.pubmed_id
-            filename = f"{dir_path}/PMID-{pmid}.json"
-            
-            # Skip if file already exists
-            if os.path.exists(filename):
-                continue
+            # Handle both single and multiple PMIDs
+            pmid_str = result.pubmed_id
+            if '\n' in pmid_str:
+                pmids = pmid_str.split('\n')
+            else:
+                pmids = [pmid_str]
+
+            for pmid in pmids:
+                if not pmid.strip():
+                    continue
+
+                filename = f"{dir_path}/PMID-{pmid.strip()}.json"
                 
-            paper_data = {
-                "id": f"PMID-{pmid}",
-                "title": result.title or "",
-                "summary": result.abstract or "",
-                "authors": [author for author in result.authors] if result.authors else [],
-                "published_date": str(result.publication_date) if result.publication_date else "",
-                "source": "pubmed"
-            }
-            
-            # Save to JSON file
-            with open(filename, 'w', encoding='utf-8') as f:
-                json.dump(paper_data, f, indent=2, ensure_ascii=False)
+                # Skip if file already exists
+                if os.path.exists(filename):
+                    continue
+                    
+                paper_data = {
+                    "id": f"PMID-{pmid.strip()}",
+                    "title": result.title or "",
+                    "summary": result.abstract or "",
+                    "authors": [author['firstname'] + ' ' + author['lastname'] for author in result.authors] if result.authors else [],
+                    "published_date": str(result.publication_date) if result.publication_date else "",
+                    "source": "pubmed"
+                }
                 
-            papers.append(paper_data)
+                # Save to JSON file
+                with open(filename, 'w', encoding='utf-8') as f:
+                    json.dump(paper_data, f, indent=2, ensure_ascii=False)
+                    
+                papers.append(paper_data)
             
     except Exception as e:
         print(f"Error scraping PubMed: {e}")
@@ -147,7 +157,7 @@ def extract_triples(papers: List[Dict[str, Any]]) -> List[Dict[str, str]]:
                     triple['paper_title'] = paper['title']
                     triple['paper_summary'] = paper['summary']
                     # Ensure authors is a list of strings (names only)
-                    triple['paper_authors'] = [a if isinstance(a, str) else a.get('name', '') for a in paper['authors']]
+                    triple['paper_authors'] = [a if isinstance(a, str) else a.get('firstname', '') + ' ' + a.get('lastname', '') for a in paper.get('authors', [])]
                     triple['paper_published_date'] = paper['published_date']
                     triple['paper_source'] = paper['source']
                     all_triples.append(triple)
@@ -220,13 +230,13 @@ async def main():
     
     # Define search queries
     arxiv_queries = {
-        'comp_bio': 'cat:q-bio.QM OR cat:q-bio.GN OR (cs.AI AND biology)',
+        'structural_bio': "'cat:q-bio.BM' OR 'cat:q-bio.SC' OR 'abs:\"structural biology\"'",
         'battery_chem': 'ti:battery OR ti:batteries OR abs:electrochemistry'
     }
     
     pubmed_queries = {
-        'comp_bio': 'computational biology OR systems biology',
-        'battery_chem': 'lithium-ion battery OR solid-state electrolyte'
+        'structural_bio': '"structural biology" OR "protein structure" OR "cryo-em"',
+        'battery_chem': '"lithium-ion battery" OR "solid-state electrolyte"'
     }
     
     all_papers = []
