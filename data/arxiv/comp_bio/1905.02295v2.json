@@ -1,0 +1,16 @@
+{
+  "id": "1905.02295v2",
+  "title": "Analysis of Gene Interaction Graphs as Prior Knowledge for Machine Learning Models",
+  "summary": "Gene interaction graphs aim to capture various relationships between genes\nand can represent decades of biology research. When trying to make predictions\nfrom genomic data, those graphs could be used to overcome the curse of\ndimensionality by making machine learning models sparser and more consistent\nwith biological common knowledge. In this work, we focus on assessing how well\nthose graphs capture dependencies seen in gene expression data to evaluate the\nadequacy of the prior knowledge provided by those graphs. We propose a\ncondition graphs should satisfy to provide good prior knowledge and test it\nusing `Single Gene Inference' tasks. We also compare with randomly generated\ngraphs, aiming to measure the true benefit of using biologically relevant\ngraphs in this context, and validate our findings with five clinical tasks. We\nfind some graphs capture relevant dependencies for most genes while being very\nsparse. Our analysis with random graphs finds that dependencies can be captured\nalmost as well at random which suggests that, in terms of gene expression\nlevels, the relevant information about the state of the cell is spread across\nmany genes.",
+  "authors": [
+    "Paul Bertin",
+    "Mohammad Hashir",
+    "Martin Weiss",
+    "Vincent Frappier",
+    "Theodore J. Perkins",
+    "Geneviève Boucher",
+    "Joseph Paul Cohen"
+  ],
+  "published_date": "2019-05-06T23:57:14+00:00",
+  "source": "arxiv"
+}

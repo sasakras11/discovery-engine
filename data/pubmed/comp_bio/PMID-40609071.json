@@ -1,0 +1,111 @@
+{
+  "id": "PMID-40609071",
+  "title": "SpoIIIL is a forespore factor required for efficient cell-cell signalling during Bacillus subtilis sporulation.",
+  "summary": "During endospore formation, the mother cell and developing spore establish cell-cell signalling pathways that lead to compartment-specific transcription and key steps in morphogenesis. Endospore-forming bacteria also assemble a highly conserved essential membrane complex, called the A-Q complex, that physically connects these cells and may serve as a molecular conduit between them. While SpoIIIL was previously identified as a putative A-Q complex component in Bacillus subtilis, its exact role remains unclear. Here, we found that SpoIIIL does not function in the A-Q complex but instead acts as a forespore-specific factor required for efficient cell-cell signalling that leads to late mother cell transcription. Quantitative image analysis revealed that spoIIIL mutant spores do not exhibit hallmark phenotypes of A-Q complex mutants. Furthermore, unlike well-characterized A-Q complex proteins, SpoIIIL-GFP localizes uniformly in the forespore membrane before dispersing into the forespore cytoplasm. A synthetic sporulation screen identified a genetic relationship between spoIIIL and murAB, a paralog of murAA, required for efficient peptidoglycan precursor synthesis during sporulation. Cytological analysis indicates that the spoIIIL murAB double mutant is severely defective in the assembly of spore cortex peptidoglycan. Investigations into how SpoIIIL affects the cortex suggest it contributes to the activity of SpoIVB, a secreted forespore protease that initiates the signalling pathway required for processing of inactive pro-σK to active σK in the mother cell, which in turn up-regulates peptidoglycan precursor synthesis required for cortex formation. Accordingly, the spoIIIL mutant exhibits delayed and reduced pro-σK processing and decreased accumulation of peptidoglycan precursors. Thus, cortex assembly defects in the spoIIIL murAB double mutant results from alterations in separate pathways contributing to peptidoglycan precursor synthesis. Finally, phylogenetic analyses reveal that SpoIIIL is restricted to a subset of Bacillales species, highlighting evolutionary specialization in the signalling pathway leading to σK activation. Collectively, our findings redefine SpoIIIL as a forespore factor required for efficient cell-cell signalling that controls late mother-cell transcription.",
+  "authors": [
+    {
+      "lastname": "Morales Angeles",
+      "firstname": "Danae",
+      "initials": "D",
+      "affiliation": "School of Life Sciences, University of Warwick, Coventry, United Kingdom."
+    },
+    {
+      "lastname": "Coleman",
+      "firstname": "Kaitlyn",
+      "initials": "K",
+      "affiliation": "School of Life Sciences, University of Warwick, Coventry, United Kingdom."
+    },
+    {
+      "lastname": "Progress Odika",
+      "firstname": "Chimezie",
+      "initials": "C",
+      "affiliation": "Australian Institute for Microbiology & Infection, University of Technology Sydney, Sydney Australia."
+    },
+    {
+      "lastname": "Graham",
+      "firstname": "Chris L B",
+      "initials": "CLB",
+      "affiliation": "School of Life Sciences, University of Warwick, Coventry, United Kingdom."
+    },
+    {
+      "lastname": "Chan",
+      "firstname": "Helena",
+      "initials": "H",
+      "affiliation": "Australian Institute for Microbiology & Infection, University of Technology Sydney, Sydney Australia."
+    },
+    {
+      "lastname": "Gilmore",
+      "firstname": "Michael",
+      "initials": "M",
+      "affiliation": "Department of Molecular Biology, Umea Universitet, Umea, Sweden."
+    },
+    {
+      "lastname": "Taib",
+      "firstname": "Najwa",
+      "initials": "N",
+      "affiliation": "Hub Bioinformatics and Biostatistics, Department of Computational Biology, Institut Pasteur, Paris, France."
+    },
+    {
+      "lastname": "Bauda",
+      "firstname": "Elda",
+      "initials": "E",
+      "affiliation": "Institut de Biologie Structurale (IBS), University Grenoble Alpes, Grenoble, France."
+    },
+    {
+      "lastname": "Moriscot",
+      "firstname": "Christine",
+      "initials": "C",
+      "affiliation": "Department of Molecular & Cellular Biology, Universite de Geneve, Geneva, Switzerland."
+    },
+    {
+      "lastname": "Gallet",
+      "firstname": "Benoit",
+      "initials": "B",
+      "affiliation": "Department of Molecular & Cellular Biology, Universite de Geneve, Geneva, Switzerland."
+    },
+    {
+      "lastname": "Fisher",
+      "firstname": "Hannah",
+      "initials": "H",
+      "affiliation": "Centre for Mechanochemical Cell Biology, University of Warwick, Coventry, United Kingdom."
+    },
+    {
+      "lastname": "Bullough",
+      "firstname": "Per A",
+      "initials": "PA",
+      "affiliation": "Centre for Mechanochemical Cell Biology, University of Warwick, Coventry, United Kingdom."
+    },
+    {
+      "lastname": "Morlot",
+      "firstname": "Cécile",
+      "initials": "C",
+      "affiliation": "Department of Molecular & Cellular Biology, Universite de Geneve, Geneva, Switzerland."
+    },
+    {
+      "lastname": "Köster",
+      "firstname": "Darius",
+      "initials": "D",
+      "affiliation": "School of Biosciences, The University of Sheffield, Sheffield, United Kingdom."
+    },
+    {
+      "lastname": "Gribaldo",
+      "firstname": "Simonetta",
+      "initials": "S",
+      "affiliation": "Department of Microbiology, Institut Pasteur, Paris, France."
+    },
+    {
+      "lastname": "Cava",
+      "firstname": "Felipe",
+      "initials": "F",
+      "affiliation": "Department of Molecular Biology, Umea Universitet, Umea, Sweden."
+    },
+    {
+      "lastname": "Rodrigues",
+      "firstname": "Christopher D A",
+      "initials": "CDA",
+      "affiliation": "School of Life Sciences, University of Warwick, Coventry, United Kingdom."
+    }
+  ],
+  "published_date": "2025-07-03",
+  "source": "pubmed"
+}

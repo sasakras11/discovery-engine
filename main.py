@@ -142,6 +142,14 @@ def extract_triples(papers: List[Dict[str, Any]]) -> List[Dict[str, str]]:
             # Validate and add triples
             for triple in triples:
                 if all(key in triple for key in ['subject', 'predicate', 'object']):
+                    # Add paper ID and metadata for traceability
+                    triple['paper_id'] = paper['id']
+                    triple['paper_title'] = paper['title']
+                    triple['paper_summary'] = paper['summary']
+                    # Ensure authors is a list of strings (names only)
+                    triple['paper_authors'] = [a if isinstance(a, str) else a.get('name', '') for a in paper['authors']]
+                    triple['paper_published_date'] = paper['published_date']
+                    triple['paper_source'] = paper['source']
                     all_triples.append(triple)
                     
         except Exception as e:
@@ -150,7 +158,7 @@ def extract_triples(papers: List[Dict[str, Any]]) -> List[Dict[str, str]]:
     
     return all_triples
 
-def load_to_neo4j(triples: List[Dict[str, str]]):
+def load_to_neo4j(triples: List[Dict[str, Any]]):
     """Load extracted triples into Neo4j database."""
     print("Loading triples to Neo4j...")
     
@@ -164,9 +172,18 @@ def load_to_neo4j(triples: List[Dict[str, str]]):
         UNWIND $triples as triple
         MERGE (s:Entity {name: triple.subject})
         MERGE (o:Entity {name: triple.object})
+        MERGE (p:Paper {id: triple.paper_id})
+        ON CREATE SET
+            p.title = triple.paper_title,
+            p.summary = triple.paper_summary,
+            p.authors = triple.paper_authors,
+            p.published_date = triple.paper_published_date,
+            p.source = triple.paper_source
         MERGE (s)-[r:RELATED_TO {type: triple.predicate}]->(o)
-        ON CREATE SET r.count = 1
-        ON MATCH SET r.count = r.count + 1
+        ON CREATE SET r.count = 1, r.paper_ids = [triple.paper_id]
+        ON MATCH SET r.count = r.count + 1,
+                       r.paper_ids = CASE WHEN triple.paper_id IN r.paper_ids THEN r.paper_ids ELSE r.paper_ids + [triple.paper_id] END
+        MERGE (s)-[:EXTRACTED_FROM]->(p)
         """
         tx.run(query, triples=batch_triples)
     
@@ -176,6 +193,9 @@ def load_to_neo4j(triples: List[Dict[str, str]]):
             batch_size = 100
             for i in tqdm(range(0, len(triples), batch_size), desc="Loading to Neo4j"):
                 batch = triples[i:i + batch_size]
+                # Debug: Print first few triples to see structure
+                if i == 0:
+                    print(f"Debug: First triple structure: {batch[0] if batch else 'No triples'}")
                 session.execute_write(create_triples_batch, batch)
                 
         print(f"Successfully loaded {len(triples)} triples to Neo4j")

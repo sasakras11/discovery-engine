@@ -1,0 +1,16 @@
+{
+  "id": "2504.03976v2",
+  "title": "OLAF: An Open Life Science Analysis Framework for Conversational Bioinformatics Powered by Large Language Models",
+  "summary": "OLAF (Open Life Science Analysis Framework) is an open-source platform that\nenables researchers to perform bioinformatics analyses using natural language.\nBy combining large language models (LLMs) with a modular agent-pipe-router\narchitecture, OLAF generates and executes bioinformatics code on real\nscientific data, including formats like .h5ad. The system includes an Angular\nfront end and a Python/Firebase backend, allowing users to run analyses such as\nsingle-cell RNA-seq workflows, gene annotation, and data visualization through\na simple web interface. Unlike general-purpose AI tools, OLAF integrates code\nexecution, data handling, and scientific libraries in a reproducible,\nuser-friendly environment. It is designed to lower the barrier to computational\nbiology for non-programmers and support transparent, AI-powered life science\nresearch.",
+  "authors": [
+    "Dylan Riffle",
+    "Nima Shirooni",
+    "Cody He",
+    "Manush Murali",
+    "Sovit Nayak",
+    "Rishikumar Gopalan",
+    "Diego Gonzalez Lopez"
+  ],
+  "published_date": "2025-04-04T22:41:16+00:00",
+  "source": "arxiv"
+}

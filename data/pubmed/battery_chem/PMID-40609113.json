@@ -1,0 +1,75 @@
+{
+  "id": "PMID-40609113",
+  "title": "Water-in-Salt Solution for Direct Regeneration of Degraded Lithium Iron Phosphate.",
+  "summary": "Direct regeneration has emerged as a pioneering paradigm in green recycling of lithium-ion battery (LIBs) cathode materials, leveraging the inherent atomic and structural advantages of degraded materials. The solution-based regeneration strategy offers significant advantages, particularly in promoting homogeneous lithiation and mitigating the thermal instability of lithium iron phosphate (LFP) materials. However, lithium supplementation for degraded LFP (DLFP) in aqueous solutions is significantly constrained by the narrow electrochemical stability window (ESW) and the limited selection of redox agents. Herein, we propose a promising water-in-salt solution system that enables the spontaneous lithiation of DLFP. This approach not only expands the ESW of the solution but also modifies the lithium solvation structure, facilitating more efficient lithium supplementation. Using the lithium chloride-gallic acid solution as a demonstration, the regenerated cathode materials exhibit excellent electrochemical performance, achieving a specific capacity of 146 mAh g",
+  "authors": [
+    {
+      "lastname": "Tang",
+      "firstname": "Jie",
+      "initials": "J",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    },
+    {
+      "lastname": "Huang",
+      "firstname": "Bosi",
+      "initials": "B",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    },
+    {
+      "lastname": "Xiao",
+      "firstname": "Xiao",
+      "initials": "X",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    },
+    {
+      "lastname": "Qu",
+      "firstname": "Haotian",
+      "initials": "H",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    },
+    {
+      "lastname": "Song",
+      "firstname": "Ya",
+      "initials": "Y",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    },
+    {
+      "lastname": "Li",
+      "firstname": "Junfeng",
+      "initials": "J",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    },
+    {
+      "lastname": "Song",
+      "firstname": "Yanze",
+      "initials": "Y",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    },
+    {
+      "lastname": "Ji",
+      "firstname": "Haocheng",
+      "initials": "H",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    },
+    {
+      "lastname": "Wang",
+      "firstname": "Junxiong",
+      "initials": "J",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    },
+    {
+      "lastname": "Zhu",
+      "firstname": "Yanfei",
+      "initials": "Y",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    },
+    {
+      "lastname": "Zhou",
+      "firstname": "Guangmin",
+      "initials": "G",
+      "affiliation": "Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, P. R. China."
+    }
+  ],
+  "published_date": "2025-07-03",
+  "source": "pubmed"
+}

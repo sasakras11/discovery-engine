@@ -1,0 +1,45 @@
+{
+  "id": "PMID-40609070",
+  "title": "Expanding and improving analyses of nucleotide recoding RNA-seq experiments with the EZbakR suite.",
+  "summary": "Nucleotide recoding RNA sequencing methods (NR-seq; TimeLapse-seq, SLAM-seq, TUC-seq, etc.) are powerful approaches for assaying transcript population dynamics. In addition, these methods have been extended to probe a host of regulated steps in the RNA life cycle. Current bioinformatic tools significantly constrain analyses of NR-seq data. To address this limitation, we developed EZbakR (https://github.com/isaacvock/EZbakR), an R package to facilitate a more comprehensive set of NR-seq analyses, and fastq2EZbakR (https://github.com/isaacvock/fastq2EZbakR), a Snakemake pipeline for flexible preprocessing of NR-seq datasets, collectively referred to as the EZbakR suite. Together, these tools generalize many aspects of the NR-seq analysis workflow. The fastq2EZbakR pipeline can assign reads to a diverse set of genomic features (e.g., genes, exons, splice junctions), and EZbakR can perform analyses on any combination of these features. EZbakR extends standard NR-seq mutational modeling to support multi-label analyses (e.g., s4U and s6G dual labeling), and implements an improved hierarchical model to better account for transcript-to-transcript variance in metabolic label incorporation. EZbakR also generalizes dynamical systems modeling of NR-seq data to support analyses of premature mRNA processing and flow between subcellular compartments. Finally, EZbakR implements flexible and well-powered comparative analyses of all estimated parameters via design matrix-specified generalized linear modeling. The EZbakR suite will thus allow researchers to make full, effective use of NR-seq data.",
+  "authors": [
+    {
+      "lastname": "Vock",
+      "firstname": "Isaac W",
+      "initials": "IW",
+      "affiliation": "Department of Molecular Biophysics and Biochemistry, Yale University, New Haven, Connecticut, United States of America.\nInstitute of Biomolecular Design and Discovery, Yale University, West Haven, Connecticut, United States of America."
+    },
+    {
+      "lastname": "Mabin",
+      "firstname": "Justin W",
+      "initials": "JW",
+      "affiliation": "Biochemistry and Biophysics Center, National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, Maryland, United States of America."
+    },
+    {
+      "lastname": "Machyna",
+      "firstname": "Martin",
+      "initials": "M",
+      "affiliation": "Department of Molecular Biophysics and Biochemistry, Yale University, New Haven, Connecticut, United States of America.\nInstitute of Biomolecular Design and Discovery, Yale University, West Haven, Connecticut, United States of America."
+    },
+    {
+      "lastname": "Zhang",
+      "firstname": "Alexandra",
+      "initials": "A",
+      "affiliation": "Department of Molecular Biophysics and Biochemistry, Yale University, New Haven, Connecticut, United States of America.\nInstitute of Biomolecular Design and Discovery, Yale University, West Haven, Connecticut, United States of America."
+    },
+    {
+      "lastname": "Hogg",
+      "firstname": "J Robert",
+      "initials": "JR",
+      "affiliation": "Biochemistry and Biophysics Center, National Heart, Lung, and Blood Institute, National Institutes of Health, Bethesda, Maryland, United States of America."
+    },
+    {
+      "lastname": "Simon",
+      "firstname": "Matthew D",
+      "initials": "MD",
+      "affiliation": "Department of Molecular Biophysics and Biochemistry, Yale University, New Haven, Connecticut, United States of America.\nInstitute of Biomolecular Design and Discovery, Yale University, West Haven, Connecticut, United States of America."
+    }
+  ],
+  "published_date": "2025-07-03",
+  "source": "pubmed"
+}

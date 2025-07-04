@@ -1,0 +1,11 @@
+{
+  "id": "2306.15716v2",
+  "title": "Holographic Batteries",
+  "summary": "We study a three-dimensional holographic CFT under the influence of a\nbackground electric field on a spacetime containing two black hole horizons.\nThe electric background is fixed such that there is potential difference\nbetween the two boundary black holes, inducing a conserved current. By\nconstructing the holographic duals to this set-up, which are solutions to the\nEinstein-Maxwell equations with a negative cosmological constant in four\ndimensions, we calculate, to a fully non-linear level, the conductivity of the\nCFT in this background. Interestingly, we find that the conductivity depends\nnon-trivially on the potential difference. The bulk solutions are flowing\ngeometries containing black hole horizons which are non-Killing and have\nnon-zero expansion. We find a novel property that the past boundary of the\nfuture horizon lies deep in the bulk and show this property remains present\nafter small perturbations of the temperature difference of the boundary black\nholes.",
+  "authors": [
+    "William D. Biggs",
+    "Jorge E. Santos"
+  ],
+  "published_date": "2023-06-27T18:00:00+00:00",
+  "source": "arxiv"
+}

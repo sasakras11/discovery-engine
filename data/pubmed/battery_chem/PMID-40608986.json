@@ -1,0 +1,39 @@
+{
+  "id": "PMID-40608986",
+  "title": "Improving Capacity Retention of Anode-Free Zinc Batteries with Simple Geometry and Lorentz Forces.",
+  "summary": "While aqueous zinc-ion batteries (AZIBs) are promising candidates for a safe, environmentally friendly, and low-cost alternative to lithium-ion batteries, they remain held back by poor energy density. One proposed method to improve their energy density is the anode-free configuration, in which the zinc anode is removed to improve zinc utilization; however, this configuration greatly reduces the system's long-term cyclability. Herein, we present a series of strategies that improve the capacity retention of the anode-free system without the need for expensive or complex modifications to the current collector that would increase production difficulty or inhibit recyclability. We demonstrate that a >99% reduction in the surface area of the current collector (further reducing material costs and energy density compared to the standard configuration) can improve capacity retention by more than 400% over the control, and the inclusion of a 100 mT magnetic field via an internal permanent magnet coupled with a 1 h hold at the end of discharge can further improve this retention increase by another 350%. These strategies demonstrate significant improvement with negligible penalty to cost, environmental friendliness, safety, and recyclability, the primary advantages of AZIBs.",
+  "authors": [
+    {
+      "lastname": "McLeod",
+      "firstname": "William T",
+      "initials": "WT",
+      "affiliation": "Department of Chemistry, Washington State University, Pullman, Washington 99164, United States."
+    },
+    {
+      "lastname": "McCracken",
+      "firstname": "Kaylie A",
+      "initials": "KA",
+      "affiliation": "Department of Chemistry, Washington State University, Pullman, Washington 99164, United States."
+    },
+    {
+      "lastname": "Sireesha",
+      "firstname": "Pedaballi",
+      "initials": "P",
+      "affiliation": "Department of Chemistry, Washington State University, Pullman, Washington 99164, United States."
+    },
+    {
+      "lastname": "Hille",
+      "firstname": "Nathaniel H",
+      "initials": "NH",
+      "affiliation": "Department of Chemistry, Washington State University, Pullman, Washington 99164, United States."
+    },
+    {
+      "lastname": "Bell",
+      "firstname": "Jeffrey G",
+      "initials": "JG",
+      "affiliation": "Department of Chemistry, Washington State University, Pullman, Washington 99164, United States.\nThe Gene and Linda Voiland School of Chemical Engineering and Bioengineering, Washington State University, Pullman, Washington 99164, United States."
+    }
+  ],
+  "published_date": "2025-07-03",
+  "source": "pubmed"
+}

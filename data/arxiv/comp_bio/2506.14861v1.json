@@ -1,0 +1,21 @@
+{
+  "id": "2506.14861v1",
+  "title": "BMFM-RNA: An Open Framework for Building and Evaluating Transcriptomic Foundation Models",
+  "summary": "Transcriptomic foundation models (TFMs) have recently emerged as powerful\ntools for analyzing gene expression in cells and tissues, supporting key tasks\nsuch as cell-type annotation, batch correction, and perturbation prediction.\nHowever, the diversity of model implementations and training strategies across\nrecent TFMs, though promising, makes it challenging to isolate the contribution\nof individual design choices or evaluate their potential synergies. This\nhinders the field's ability to converge on best practices and limits the\nreproducibility of insights across studies. We present BMFM-RNA, an\nopen-source, modular software package that unifies diverse TFM pretraining and\nfine-tuning objectives within a single framework. Leveraging this capability,\nwe introduce a novel training objective, whole cell expression decoder (WCED),\nwhich captures global expression patterns using an autoencoder-like CLS\nbottleneck representation. In this paper, we describe the framework, supported\ninput representations, and training objectives. We evaluated four model\ncheckpoints pretrained on CELLxGENE using combinations of masked language\nmodeling (MLM), WCED and multitask learning. Using the benchmarking\ncapabilities of BMFM-RNA, we show that WCED-based models achieve performance\nthat matches or exceeds state-of-the-art approaches like scGPT across more than\na dozen datasets in both zero-shot and fine-tuning tasks. BMFM-RNA, available\nas part of the biomed-multi-omics project (\nhttps://github.com/BiomedSciAI/biomed-multi-omic ), offers a reproducible\nfoundation for systematic benchmarking and community-driven exploration of\noptimal TFM training strategies, enabling the development of more effective\ntools to leverage the latest advances in AI for understanding cell biology.",
+  "authors": [
+    "Bharath Dandala",
+    "Michael M. Danziger",
+    "Ella Barkan",
+    "Tanwi Biswas",
+    "Viatcheslav Gurev",
+    "Jianying Hu",
+    "Matthew Madgwick",
+    "Akira Koseki",
+    "Tal Kozlovski",
+    "Michal Rosen-Zvi",
+    "Yishai Shimoni",
+    "Ching-Huei Tsou"
+  ],
+  "published_date": "2025-06-17T15:40:08+00:00",
+  "source": "arxiv"
+}
