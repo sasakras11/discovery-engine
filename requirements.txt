@@ -1,2 +1,6 @@
-requests==2.31.0
-neo4j==5.18.0 
+arxiv
+pymed
+openai
+neo4j
+python-dotenv
+tqdm 
